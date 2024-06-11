@@ -1,0 +1,127 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: url('4vztk5m7p9651.jpg') no-repeat center center fixed; /* Menambahkan gambar latar belakang */
+    background-size: cover; /* Mengatur ukuran gambar agar menutupi seluruh halaman */
+    color: #333;
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Membuat kontainer sedikit transparan */
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 450px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #ddd;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.header h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #555;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus,
+input[type="date"]:focus {
+    border-color: #333;
+    box-shadow: 0 0 5px rgba(51, 51, 51, 0.2);
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Mengurangi margin bawah */
+}
+
+.radio-group label {
+    margin-left: 10px; /* Menambahkan jarak antara tombol radio dan teks */
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .header h3 {
+        font-size: 18px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+    }
+}
